@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+
+    <section>
+        <!--enctype="multipart/form-data"-->
+        <!--method = "POST" ou method = "GET"-->
+        <form id="form" action="" method="POST" enctype="multipart/form-data">
+            <div> <!-- Tipo text -->
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" size="30" maxlength="20"
+                required
+                autofocus/>
+            </div>
+                <br/>
+
+            <div> <!-- Tipo text -->
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" size="80" maxlength="50"
+                required/>
+                <input type="number" name="numero" id="numero" step="1" min="1" max="100"/>
+            </div>
+                <br/>
+
+            <div> <!-- textarea -->
+                <label for="email">Observações</label> <br/>
+                <textarea name="obs" id="obs" cols="50" rows="3"
+                placeholder="Observações..."></textarea>
+            </div>
+                <br/>
+            
+            <div> <!-- Tipo cor-->
+                <label for="cor">Cor</label>
+                <input type="color">
+            </div>
+                <br/>
+
+            <div> <!-- Tipo Range-->
+                <label for="valor">Valor (entre 0 a 50):</label>
+                <input 
+                type="range" id="valor" name="valor" min="0" max="20">
+            </div>  
+                <br/>
+                
+            <div> <!-- tipo search -->
+                <label for="pesquisar">Pesquisar</label>
+                <input type="search" id="pesquisar" name="pesquisar">
+            </div> 
+                <br/> 
+                
+            <div> <!-- tipo dates -->
+                <label for="data">Data</label>
+                <input type="date" id="data">
+            </div> 
+                <br/>   
+            
+            <div> <!-- tipo file --> 
+                <label for="myfile">Select a file</label>
+                <input type="file" id="myfile" name="myfile" /> <!-- multiple -->
+            </div>    
+                <br/>
+
+            <!-- tipo oculto -->
+            <input type="hidden" value="Conteúdo oculto">
+            
+            <div><!-- tipo caixa de seleção -->
+                <p>Botão Checkbox</p>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bicicleta"/>
+                <label for="vehicle1">Bicicleta</label><br>
+
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Carro"/>
+                <label for="vehicle2">Carro</label><br>
+
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Moto"/>
+                <label for="vericle3">Moto</label>
+            </div>
+
+            <div> <!-- tipo botão radio -->
+                <p>Botão Rádio</p>
+                <p>Tem que usar o mesmo nome</p>
+
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+
+                <input type="radio" id="javascript" name="fav_language" value="Javascrit">
+                <label for="javascrit">JavaScrit</label>
+            </div>
+                <br/>
+
+            <div> <!-- tipo select -->
+                <label for="produtos">Produtos</label>
+                <select name="produtos" id="produtos" multiple> <!-- multiple-->
+                    <option value="Arroz">Arroz</option>
+                    <option value="Feijão">Feijão</option>
+                    <option value="Leite">Leite</option>
+                    <option value="Açucar" selected>Açucar</option>
+                </select>
+            </div>    
+
+        </form>
+    </section>
+</body>
+</html>
